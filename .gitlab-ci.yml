@@ -1,0 +1,5 @@
+build_image:
+  image: docker
+  stage: build
+  script:
+    - docker build -t fix-video:$CI_COMMIT_REF_SLUG .
